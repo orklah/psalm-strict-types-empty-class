@@ -1,7 +1,6 @@
 <?php
 namespace Orklah\StrictTypesEmptyClass;
 
-use Orklah\PsalmStrictNumericCast\Hooks\StrictNumericCastAnalyzer;
 use Orklah\StrictTypesEmptyClass\Hooks\StrictTypesEmptyClassAnalyzer;
 use SimpleXMLElement;
 use Psalm\Plugin\PluginEntryPointInterface;

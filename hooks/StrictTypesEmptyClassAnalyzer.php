@@ -32,7 +32,7 @@ class StrictTypesEmptyClassAnalyzer implements AfterFileAnalysisInterface
 
         $class = array_pop($file_storage->classlikes_in_file);
         $class_storage = $codebase->classlike_storage_provider->get($class);
-        if($class_storage->methods !== 0){
+        if(count($class_storage->methods) !== 0){
             //the class has methods. Not interested. However, we may go further and allow abstact methods or empty methods
             return;
         }
